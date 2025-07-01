@@ -1,5 +1,9 @@
+import { Injectable } from '@angular/core';
 import { BehaviorSubject, interval, Observable } from 'rxjs';
 
+@Injectable({
+  providedIn: 'root',
+})
 export class SpeedService {
   private readonly maxSpeed = 200;
   private readonly minSpeed = 0;
