@@ -7,6 +7,15 @@
   flex-direction: column;
   max-width: 64rem;
   width: 100%;
+  img {
+    height: 10px;
+  }
+  .card-warning {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 2em;
+  }
   p {
     color: rgb(100 116 139);
     margin-top: 2rem;
