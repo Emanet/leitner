@@ -7,7 +7,7 @@ import { BehaviorSubject, interval, Observable } from 'rxjs';
 export class SpeedService {
   private readonly maxSpeed = 200;
   private readonly minSpeed = 0;
-  private readonly maxDelta = 15;
+  private readonly maxDelta = 30;
   private readonly updateIntervalMs = 1000;
 
   private car1SpeedSubject = new BehaviorSubject<number>(0);

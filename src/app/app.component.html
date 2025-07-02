@@ -1,26 +1,29 @@
 <app-header></app-header>
 
-<div class="layout-content-container">
-  <div class="content-header-container">
-    <h1>Vehicle Speed Dashboard</h1>
-    <h2>Real-time monitoring of vehicle speeds and driver information.</h2>
-  </div>
-  <div class="card-container">
-    <app-driver-card
-      [carName]="'Car 1'"
-      [speed]="car1Speed"
-      [driver]="drivers[0]"
-    ></app-driver-card>
+<div class="main">
+  <div class="layout-content-container">
+    <div class="content-header-container">
+      <h1>Vehicle Speed Dashboard</h1>
+      <h2>Real-time monitoring of vehicle speeds and driver information.</h2>
+    </div>
+    <div class="card-container">
+      <app-driver-card
+        [carName]="'Car 1'"
+        [speed]="car1Speed"
+        [driver]="drivers[0]"
+      ></app-driver-card>
 
-    <app-driver-card
-      [carName]="'Car 2'"
-      [speed]="car2Speed"
-      [driver]="drivers[1]"
-    ></app-driver-card>
-  </div>
-  <div class="card-warning">
-    <img src="/assets/warning.png" alt="" />
-    <p>Speeds above 100 km/h are highlighted in red.</p>
+      <app-driver-card
+        [carName]="'Car 2'"
+        [speed]="car2Speed"
+        [driver]="drivers[1]"
+      ></app-driver-card>
+    </div>
+    <div class="card-warning">
+      <img src="/assets/warning.png" alt="" />
+      <p>Speeds above 100 km/h are highlighted in red.</p>
+    </div>
   </div>
 </div>
+
 <app-footer></app-footer>
