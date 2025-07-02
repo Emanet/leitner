@@ -1,0 +1,23 @@
+<div class="speed-card" [ngClass]="getSpeedClass(speed)">
+  <p class="speed-label">{{ carName }}</p>
+  <div class="information-container">
+    <div>
+      <span class="speed-value">{{ speed }}</span>
+      <span class="speed-unit">km/h</span>
+    </div>
+    <div *ngIf="driver">
+      <div>
+        <span class="driver-info-label">Firstname: </span>
+        <span class="driver-info-value"> {{ driver.firstName }}</span>
+      </div>
+      <div>
+        <span class="driver-info-label">Lastname: </span>
+        <span class="driver-info-value"> {{ driver.lastName }}</span>
+      </div>
+      <div>
+        <span class="driver-info-label">Age: </span>
+        <span class="driver-info-value"> {{ driver.age }}</span>
+      </div>
+    </div>
+  </div>
+</div>

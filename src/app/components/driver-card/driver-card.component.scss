@@ -1,0 +1,52 @@
+.speed-card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  transition-property: all;
+  transition-duration: 300ms;
+  text-align: center;
+  .speed-label {
+    color: #64748b;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 0;
+  }
+  .driver-info-label {
+    color: #64748b;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .driver-info-value {
+    color: #1e293b;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+  }
+  .speed-value {
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+  }
+  .speed-unit {
+    margin-left: 0.25rem;
+  }
+  &.danger {
+    border: 2px solid #ef4444;
+    box-shadow: 0 0 15px 0 rgba(239, 68, 68, 0.3);
+
+    .speed-value,
+    .speed-unit {
+      color: #ef4444;
+    }
+  }
+}
+
+.information-container {
+  display: flex;
+  justify-content: space-around;
+}
