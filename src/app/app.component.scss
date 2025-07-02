@@ -1,0 +1,48 @@
+.layout-content-container {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  justify-self: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 64rem;
+  width: 100%;
+  p {
+    color: rgb(100 116 139);
+    margin-top: 2rem;
+  }
+  .content-header-container {
+    text-align: center;
+    margin-bottom: 2rem;
+    h1 {
+      font-weight: 700;
+      color: #1e293b;
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      color: #64748b;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 400;
+    }
+  }
+  .card-container {
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (max-width: 640px) {
+      flex-direction: column;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 2rem;
+    }
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    max-width: 64em;
+    display: grid;
+    gap: 2rem;
+  }
+}
