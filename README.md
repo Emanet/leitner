@@ -1,8 +1,33 @@
-# Leitner
+# Leitner Test Case
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+It is built using Angular and demonstrates a Speed Monitor application that displays real-time speed information for drivers. The application is primarily written in TypeScript, with styling in SCSS, and uses Angular CLI for development, testing, and building.
 
-## Development server
+## Features
+
+- Real-time speed monitoring using RxJS and Angular services
+- Dynamic fetching of driver data from a remote API
+- Responsive, modern UI with custom SCSS styling
+- Modular component architecture (header, footer, driver cards)
+- Built with Angular CLI best practices
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (version 18.x or higher recommended)
+- [Angular CLI](https://angular.dev/tools/cli) installed globally
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Emanet/leitner.git
+cd leitner
+npm install
+```
+
+### Development Server
 
 To start a local development server, run:
 
@@ -10,50 +35,67 @@ To start a local development server, run:
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Navigate to `http://localhost:4200/` in your browser. The app will reload automatically if you make changes to the source files.
 
-## Code scaffolding
+### Code Scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+To generate a new component with Angular CLI, run:
 
 ```bash
 ng generate component component-name
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+For more schematics (like directives or pipes), run:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+### Building
 
-To build the project run:
+To build the project for production:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Running Unit Tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+To execute unit tests via [Karma](https://karma-runner.github.io):
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+### Running End-to-End Tests
 
-For end-to-end (e2e) testing, run:
+To run end-to-end tests:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+> Note: Angular CLI does not provide an end-to-end testing framework by default; you may configure your preferred e2e solution.
+
+## Project Structure
+
+- `src/app/` — Angular components, services, and configuration
+- `src/assets/` — Static assets (images, fonts)
+- `src/styles.scss` — Global SCSS styles
+
+## Technologies Used
+
+- **Angular** (v19+)
+- **TypeScript**
+- **RxJS**
+- **SCSS**
 
 ## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+For more information on Angular CLI usage, see the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli).
+
+---
+
+© 2025 Speed Monitor App. All rights reserved.
